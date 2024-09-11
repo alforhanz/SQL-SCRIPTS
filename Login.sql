@@ -1,0 +1,4 @@
+--exec [CLSA].[SP_valores_Dashboard] 'D','MARVMELA';		--// Usuario de verificador de Contenedor
+--exec [CLSA].[SP_valores_Dashboard] 'D','pedrsanc';  --'eliemena'		--// Usuario de verificador de Pedidos
+--exec [CLSA].[SP_valores_Dashboard] 'D','josechir';  --
+--exec [CLSA].[SP_valores_Dashboard] 'D','pruebapma';
