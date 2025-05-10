@@ -1,0 +1,5 @@
+EXEC CLSA.WMS_sp_getTrasladoMercancia 'WMS_VT','S','TP','20241001','20241116','B-51'; --,'TRAS01-00059401';
+
+select * 
+from CLSA.WMS_CONTROL_ENTREGA_TRAS
+where BODEGA = 'B-51' AND ESTADO = 'P'

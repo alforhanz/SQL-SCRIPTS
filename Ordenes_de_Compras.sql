@@ -18,7 +18,7 @@
 
 --EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','E','B-54',null,null,null,null;
 --EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','PRUEBAPMA','P','B-81','E',null,null,null;
---EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','D','B-54',null,'OC-0036910',null,null;;
+--EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','D','B-54',null,'OC-0036910',null,null;
 --EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS',null,'D',null,null,'OC-0036910',null,null;;
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -71,7 +71,11 @@
 
 
 --EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','E','B-01',null;
---EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','P',null,null;
+--EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','P',null,'OC-0035486';
 --EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','D','B-01','OC-0036959';
 --SELECT *
 --  FROM [Prueba2].[CLSA].[WMS_CONTROL_ENTREGA_EMB];
+
+
+--EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','P','B-54',null,'OC-0035486',null,null
+--EXEC [CLSA].[WMS_sp_getOrdenesCompras] 'WMS','pruebapma','D','B-54',null,'OC-0035486',null,null

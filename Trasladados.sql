@@ -1,0 +1,3 @@
+--select * from CLSA.WMS_CONTROL_ENTREGA_CONTENEDOR 
+--exec [CLSA].[WMS_sp_getTrasladoContenedorWeb] 'WMS', 'PRUEBAPMA', 'E', NULL, NULL, NULL, NULL, '20230101', '20241010'
+--exec [CLSA].[WMS_sp_getTrasladoContenedorWeb] 'WMS', 'PRUEBAPMA', 'L', NULL, NULL, 'M81-0000015307', NULL, NULL, NULL	

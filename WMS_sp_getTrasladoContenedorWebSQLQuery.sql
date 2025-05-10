@@ -1,5 +1,4 @@
-/************* Procedimiento que se encarga de mostrar los contenedores/Muelles que son creados, para que el personal de bodega, busque y revise las líneas que debe verificar.
-
+/*
 ALTER PROCEDURE [CLSA].[WMS_sp_getTrasladoContenedorWeb]
 	-- Add the parameters for the stored procedure here	
      @pSistema		varchar(5) --WMS
@@ -15,12 +14,11 @@ ALTER PROCEDURE [CLSA].[WMS_sp_getTrasladoContenedorWeb]
 	--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--
 AS
 BEGIN
-
 */--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--
 
 exec [CLSA].[WMS_sp_getTrasladoContenedorWeb] 'WMS', 'PRUEBAPMA', 'E', NULL, NULL, NULL, NULL, '20230101', '20241120'		---// Muestra el resumen de los contenedores según el usuario y el rango de fecha
 
-exec [CLSA].[WMS_sp_getTrasladoContenedorWeb] 'WMS', 'PRUEBAPMA', 'L', NULL, NULL, 'M81-0000015264', NULL, NULL, NULL		---// Muestra el Detalle o las líneas que tiene el contenedor seleccionado
+exec [CLSA].[WMS_sp_getTrasladoContenedorWeb] 'WMS', 'PRUEBAPMA', 'L', NULL, NULL, 'M81-0000015402', NULL, NULL, NULL		---// Muestra el Detalle o las líneas que tiene el contenedor seleccionado
 
 select * from CLSA.WMS_CONTROL_ENTREGA_CONTENEDOR 
-where Contenedor = 'M81-0000015264'
+where Contenedor = 'M81-0000015402';
